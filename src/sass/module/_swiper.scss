@@ -1,18 +1,28 @@
 @use "global" as *;
-.swiper {
+.gallery {
   width: 50%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-thumbs .swiper-slide {
+  opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
 }
 
 .swiper-slide {
   width: 100%;
-  position: relative;
   overflow: hidden;
 }
 
 .swiper-slide::before {
   content: "";
   display: block;
-  padding-top: 66.6%;
+  padding-top: calc(208.08 / 326 * 100%);
 }
 
 .swiper-slide img {
@@ -20,12 +30,4 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.slider-thumb .swiper-slide {
-  opacity: 0.4;
-}
-
-.slider-thumb .swiper-slide-thumb-active {
-  opacity: 1;
 }

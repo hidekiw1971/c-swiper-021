@@ -7,3 +7,4 @@
 ## 更新履歴
 
 - 2022/10/7 second commit
+- 2022/1-/6 swiper-container を使えばきっちりセンターリングできた。但し、swiper 配下に swiper-container をセットしたらダメだった。
